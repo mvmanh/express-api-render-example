@@ -19,6 +19,6 @@ jobs:
         ssh-keyscan -H ${{ secrets.REMOTE_HOST }} > ~/.ssh/known_hosts
     - name: Deploy code via SSH
       run: |
-        ssh ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "cd ${{ secrets.TARGET }} && cd express-api-render-example && git pull && npm i && pm2 update app"
+        ssh ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "cd ${{ secrets.TARGET }} && cd express-api-render-example && git pull && npm i && pm2 restart app"
     - name: cleanup
       run: rm -rf ~/.ssh

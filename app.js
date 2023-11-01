@@ -7,6 +7,7 @@ app.use(express.json());
 let products = [
   { id: 1, name: 'Product 1', price: 10.99, color: 'Red' },
   { id: 2, name: 'Product 2', price: 19.99, color: 'Blue' },
+  { id: 2, name: 'Product 2', price: 19.99, color: 'Blue' },
 ];
 
 app.get('/', (req, res) => {
