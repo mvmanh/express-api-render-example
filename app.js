@@ -5,10 +5,36 @@ app.use(express.json());
 
 // In-memory product data
 let products = [
-  { id: 1, name: 'Product 1', price: 10.99, color: 'Red' },
-  { id: 2, name: 'Product 2', price: 19.99, color: 'Blue' },
-  { id: 3, name: 'Product 3', price: 19.99, color: 'Blue' },
-  { id: 4, name: 'Product 4', price: 19.99, color: 'Blue' },
+  {
+    id: 1,
+    name: "iPhone 13",
+    price: 799,
+    color: "Midnight Green"
+  },
+  {
+    id: 2,
+    name: "MacBook Air",
+    price: 999,
+    color: "Silver"
+  },
+  {
+    id: 3,
+    name: "iPad Pro",
+    price: 799,
+    color: "Space Gray"
+  },
+  {
+    id: 4,
+    name: "Apple Watch Series 7",
+    price: 399,
+    color: "Blue"
+  },
+  {
+    id: 5,
+    name: "AirPods Pro",
+    price: 249,
+    color: "White"
+  }
 ];
 
 app.get('/', (req, res) => {
