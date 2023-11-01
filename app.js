@@ -10,7 +10,7 @@ let products = [
 ];
 
 app.get('/', (req, res) => {
-    res.json({message: 'Please access /products to get data\n'});
+    res.json({message: 'Please access /products to get data that you will need\n'});
   });
 
 // Get all products
