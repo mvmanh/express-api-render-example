@@ -62,7 +62,8 @@ app.delete('/products/:id', (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
+const version = 1.0
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server ${version} is running on port ${PORT}`);
 });
