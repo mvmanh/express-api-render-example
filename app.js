@@ -10,7 +10,7 @@ let products = [
 ];
 
 app.get('/', (req, res) => {
-    res.json({message: 'Please access /products to get data'});
+    res.json({message: 'Please access /products to get data\n'});
   });
 
 // Get all products
@@ -63,7 +63,7 @@ app.delete('/products/:id', (req, res) => {
 });
 
 const PORT = process.env.PORT || 8080;
-const version = 2.0
+const version = 3.0
 app.listen(PORT, () => {
   console.log(`Server ${version} is running on port ${PORT}`);
 });
