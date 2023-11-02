@@ -34,6 +34,12 @@ let products = [
     name: "AirPods Pro",
     price: 249,
     color: "White"
+  },
+  {
+    id: 6,
+    name: "AirPods Pro v2",
+    price: 299,
+    color: "White"
   }
 ];
 
